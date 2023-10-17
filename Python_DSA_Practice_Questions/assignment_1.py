@@ -1,12 +1,19 @@
+from array import *
+
 # Que:1-> Give an array with some integer type values. Write a python script to
 # sort an array values.
+arr = array('i', [55, 22, 44, 121, 12, 11])
+# convert an array to a sorted list.
+arr_list = sorted(arr)
+arr = array('i', arr_list)
 # Que:2-> Give a list of heterogeneous elements.Write a python script to remove all non int values from the list.
 """
-lst = ['HTML', 1001, 'CSS', 55, 'Python', 55.33, 'JavaScript', 'React', 12, 15, 20, True]
+lst = ['HTML', 1001, 'CSS', 'hello', 55, 'Python', 55.33, 'JavaScript', 'React', 12, 15, 20, True, False]
 print(lst)
-num_lst = [element for element in lst if isinstance(element, int)]
+lst = [element for element in lst if isinstance(element, int) and not (isinstance(element, bool))]
+# print(lst)
 # this is the second method to solve this question.
-# num_lst = [element for element in lst if type(element) == int]
+num_lst = [element for element in lst if type(element) == int]
 print(num_lst)
 """
 # Que:3-> Write a python script to calculate average of elements in the list.
