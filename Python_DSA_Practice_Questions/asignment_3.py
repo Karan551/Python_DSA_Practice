@@ -93,10 +93,9 @@ class SLL:
             print(temp.item, end=' ')
             temp = temp.next
 
-
-# create an object of SLLIterator (Que:-9)
-def __iter__(self):
-    return SLLIterator(self.start)
+    # create an object of SLLIterator (Que:-9)
+    def __iter__(self):
+        return SLLIterator(self.start)
 
 
 # Testing code
@@ -113,9 +112,10 @@ print()
 myList.insert_after(7, 500)
 
 myList.printObject()
-
-# for i in myList:
-#     print(i)
+print()
+print()
+for i in myList:
+    print(i)
 # print(result)
 # print(myList.search(101))
 
@@ -129,3 +129,13 @@ myList.printObject()
 # a new node after a given node of the list.
 # Que:8-> In class SLL define a method to print all elements of the
 # list.
+# Que:9-> In class SLL implement iterator for SLL to access  all
+# the elements of the list in a sequence.
+# Que:10-> In class SLL define a method delete first() method to
+# delete first element from the list.
+# Que:11-> In class SLL define a method delete_last() method to
+# delete last element from the list.
+# Que:12-> In class SLL define a method delete_item() to delete
+# specified element from the list.
+
+# abhi last ke three question solve karna hai.
