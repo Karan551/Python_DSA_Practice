@@ -97,25 +97,55 @@ class SLL:
     def __iter__(self):
         return SLLIterator(self.start)
 
+    # Que:10
+    def delete_first(self):
+        # check that list is not empty
+        if not self.is_empty():
+            # assign second element reference to the start.
+            self.start = self.start.next
+
+    # Que:11
+    def delete_last(self):
+        # if list is not empty then we will delete item.
+        if not self.is_empty():
+            # if list contains only one item then we will assign
+            # None in self.start
+            if self.start.next is None:
+                self.start = None
+            else:
+                # get first element reference.
+                temp = self.start
+                # we start looping to the second element and
+                # traverse every element
+                while temp.next.next is not None:
+                    temp = temp.next
+                # assign second last element None
+                temp.next = None
+        # if list is empty then we will do nothing.
+        else:
+            pass
+
 
 # Testing code
 myList = SLL()
 # result = myList.is_empty()
 myList.insert_at_start(20)
-myList.insert_at_start(40)
-myList.insert_at_start(80)
+# myList.insert_at_start(40)
+# myList.insert_at_start(80)
 myList.insert_at_last(100)
-myList.insert_at_start(15)
+# myList.insert_at_start(15)
 myList.insert_at_last(78)
-myList.printObject()
-print()
-myList.insert_after(7, 500)
 
+# myList.insert_after(15, 500)
 myList.printObject()
-print()
-print()
-for i in myList:
-    print(i)
+# myList.delete_first()
+myList.delete_last()
+print('\nafter delete element.')
+myList.printObject()
+# print()
+# print()
+# for i in myList:
+#     print(i)
 # print(result)
 # print(myList.search(101))
 
