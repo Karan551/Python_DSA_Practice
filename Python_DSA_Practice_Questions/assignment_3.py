@@ -125,21 +125,48 @@ class SLL:
         else:
             pass
 
+    # Que:12
+    def delete_item(self, data):
+        # if list is empty then do nothing.
+        if self.is_empty():
+            pass
+        # if list contains only item then we will do this.And list matches the
+        # data then do this.
+        elif self.start.next is None and self.start.item == data:
+            self.start = None
+        # if list contains at least two items then we will apply this.
+        else:
+            # Get the reference of first item
+            temp = self.start
+            # if we find the data at the first item then we will do this.
+            if temp.item == data:
+                # assign the reference of second element reference to the start.
+                self.start = self.start.next
+            # Start traversing using while loop.(This tricky so apply carefully.)
+            while temp.next is not None:
+                if temp.next.item == data:
+                    temp.next = temp.next.next
+                    break
+                temp = temp.next
+
 
 # Testing code
 myList = SLL()
 # result = myList.is_empty()
-myList.insert_at_start(20)
+# myList.insert_at_start(20)
 # myList.insert_at_start(40)
 # myList.insert_at_start(80)
-myList.insert_at_last(100)
+# myList.insert_at_last(100)
 # myList.insert_at_start(15)
-myList.insert_at_last(78)
+# myList.insert_at_last(78)
 
 # myList.insert_after(15, 500)
 myList.printObject()
 # myList.delete_first()
-myList.delete_last()
+# myList.delete_last()
+a = int(input("\nenter the element that you want to delete: "))
+# myList.delete_item(100)
+myList.delete_item(a)
 print('\nafter delete element.')
 myList.printObject()
 # print()
