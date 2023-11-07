@@ -151,30 +151,33 @@ class SLL:
 
 
 # Testing code
-myList = SLL()
-# result = myList.is_empty()
-# myList.insert_at_start(20)
-# myList.insert_at_start(40)
-# myList.insert_at_start(80)
-# myList.insert_at_last(100)
-# myList.insert_at_start(15)
-# myList.insert_at_last(78)
+# print(__name__)
+# To run this code when it runs same file otherwise not.
+if __name__ == "__main__":
+    myList = SLL()
+    # result = myList.is_empty()
+    # myList.insert_at_start(20)
+    # myList.insert_at_start(40)
+    # myList.insert_at_start(80)
+    # myList.insert_at_last(100)
+    # myList.insert_at_start(15)
+    # myList.insert_at_last(78)
 
-# myList.insert_after(15, 500)
-myList.printObject()
-# myList.delete_first()
-# myList.delete_last()
-a = int(input("\nenter the element that you want to delete: "))
-# myList.delete_item(100)
-myList.delete_item(a)
-print('\nafter delete element.')
-myList.printObject()
-# print()
-# print()
-# for i in myList:
-#     print(i)
-# print(result)
-# print(myList.search(101))
+    # myList.insert_after(15, 500)
+    myList.printObject()
+    # myList.delete_first()
+    # myList.delete_last()
+    a = int(input("\nenter the element that you want to delete: "))
+    # myList.delete_item(100)
+    myList.delete_item(a)
+    print('\nafter delete element.')
+    myList.printObject()
+    # print()
+    # print()
+    # for i in myList:
+    #     print(i)
+    # print(result)
+    # print(myList.search(101))
 
 # Que:3-> Define a method is_empty() to check if the linked list is empty in SLL class.
 # Que:4-> In class SLL define a method insert_at_start() to insert an element at the starting of the list.
