@@ -43,13 +43,14 @@ myStack3.push(90)
 print(myStack3.is_empty())
 print('This is a last item:', myStack3.peek())
 print(myStack3.size())
-
+# ------------------Stack Using Linked List------------------
 # -------------------Questions--------------------------
 # Que:1-> Import module containing Singly linked list code in your python file.
 # Que:2-> Define a class Stack to implement Stack data structure.Define __init__()
 # method to create Singly linked list(SLL) object.
 # Que:3-> Define a method is_empty() to check if the stack is empty in Stack class.
 # Que:4-> In Stack class define push() method to add data o to the stack.
-# Que:5-> In Stack class define peek() method to return top element on the stack.
-#  Que:6-> In Stack class define size() method to return size of the stack that is
+# Que:5-> In Stack class define pop() method to remove top element from Stack.
+# Que:6-> In Stack class define peek() method to return top element on the stack.
+# Que:7-> In Stack class define size() method to return size of the stack that is
 # number of items present in the stack.
